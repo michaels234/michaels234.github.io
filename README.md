@@ -36,7 +36,7 @@ npm run preview
 # git:
 # create github repository with the same name as the project above
 git init
-# add anything you don't need into .gitignore, including the dist folder.
+# add anything you don't need into .gitignore, but don't ignore dist.
 # push the first commit:
 git add .
 git commit -m "first commit"
@@ -46,10 +46,15 @@ git push -u origin main
 # see on github you pushed your source code
 # set your github pages settings:
 # source: deploy from a branch. branch: none, /root. for now.
-# push just the dist folder to gh-pages branch:
-git add dist -f && git commit -m "subtree commit"
-git subtree push --prefix dist origin gh-pages
+# if first time, create gh-pages branch from main:
+git checkout -b gh-pages main
+# get just the dist folder from main into gh-pages branch, you need to know the commit code from main:
+git checkout e0f7de754cc99c1caaa27ccbde973f2a9c27ecef dist
+git add .
+git commit -m "commit dist"
+# if first push of gh-pages:
+git push --set-upstream origin gh-pages
+# otherwise just
+git push
 # go set the github pages settings to use the gh-pages branch
 # that should deploy it. check in github actions to see deployment
-
-# for 2nd time deploying and onward
