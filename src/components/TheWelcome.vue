@@ -12,75 +12,66 @@ import SupportIcon from './icons/IconSupport.vue'
     <template #icon>
       <DocumentationIcon />
     </template>
-    <template #heading>Documentation</template>
-
-    Vue’s
-    <a href="https://vuejs.org/" target="_blank" rel="noopener">official documentation</a>
-    provides you with all information you need to get started.
+    <template #heading>Japanese - English Study Web App (Software Development)</template>
+    An app for English speakers to study Japanese<br>
+    <span style="font-weight: 700">Frontend:</span> Vue.js, JavaScript, HTML, CSS, Vite<br>
+    <span style="font-weight: 700">Backend:</span> Python, FastAPI<br>
+    Link coming soon
   </WelcomeItem>
 
   <WelcomeItem>
     <template #icon>
       <ToolingIcon />
     </template>
-    <template #heading>Tooling</template>
-
-    This project is served and bundled with
-    <a href="https://vitejs.dev/guide/features.html" target="_blank" rel="noopener">Vite</a>. The
-    recommended IDE setup is
-    <a href="https://code.visualstudio.com/" target="_blank" rel="noopener">VSCode</a> +
-    <a href="https://github.com/johnsoncodehk/volar" target="_blank" rel="noopener">Volar</a>. If
-    you need to test your components and web pages, check out
-    <a href="https://www.cypress.io/" target="_blank" rel="noopener">Cypress</a> and
-    <a href="https://on.cypress.io/component" target="_blank">Cypress Component Testing</a>.
-
-    <br />
-
-    More instructions are available in <code>README.md</code>.
-  </WelcomeItem>
-
-  <WelcomeItem>
-    <template #icon>
-      <EcosystemIcon />
-    </template>
-    <template #heading>Ecosystem</template>
-
-    Get official tools and libraries for your project:
-    <a href="https://pinia.vuejs.org/" target="_blank" rel="noopener">Pinia</a>,
-    <a href="https://router.vuejs.org/" target="_blank" rel="noopener">Vue Router</a>,
-    <a href="https://test-utils.vuejs.org/" target="_blank" rel="noopener">Vue Test Utils</a>, and
-    <a href="https://github.com/vuejs/devtools" target="_blank" rel="noopener">Vue Dev Tools</a>. If
-    you need more resources, we suggest paying
-    <a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">Awesome Vue</a>
-    a visit.
+    <template #heading>Space Game (Software Development)</template>
+    An open-world 3D first-person game in space<br>
+    <span style="font-weight: 700">Coding:</span> C#<br>
+    <span style="font-weight: 700">Tools Used:</span> Unity, Blender<br>
+    <a href="https://play.unity.com/mg/other/webgl-builds-238852" target="_blank">Check it out</a>
   </WelcomeItem>
 
   <WelcomeItem>
     <template #icon>
       <CommunityIcon />
     </template>
-    <template #heading>Community</template>
-
-    Got stuck? Ask your question on
-    <a href="https://chat.vuejs.org" target="_blank" rel="noopener">Vue Land</a>, our official
-    Discord server, or
-    <a href="https://stackoverflow.com/questions/tagged/vue.js" target="_blank" rel="noopener"
-      >StackOverflow</a
-    >. You should also subscribe to
-    <a href="https://news.vuejs.org" target="_blank" rel="noopener">our mailing list</a> and follow
-    the official
-    <a href="https://twitter.com/vuejs" target="_blank" rel="noopener">@vuejs</a>
-    twitter account for latest news in the Vue world.
+    <template #heading>Movie Recommendations (Software Development)</template>
+    Web app that uses machine learning (AI) to recommend movies similar to a movie input by the user<br>
+    <span style="font-weight: 700">Frontend:</span> React, JavaScript, HTML, CSS<br>
+    <span style="font-weight: 700">Backend:</span> Python, Flask<br>
+    <span style="font-weight: 700">Other Tools Used:</span> scikit-learn, NLTK, NumPy, Pandas, WayScript<br>
+    <a href="https://daringly-nifty-panda-domain.wayscript.cloud/" target="_blank">Go To Movie Recommendations</a>
   </WelcomeItem>
 
   <WelcomeItem>
     <template #icon>
       <SupportIcon />
     </template>
-    <template #heading>Support Vue</template>
+    <template #heading>Event Horizon (Business & Software Development)</template>
+    Development of event hosting web / mobile apps and business strategy<br>
+    <span style="font-weight: 700">Frontend:</span> Vue.js, JavaScript, HTML, CSS<br>
+    <span style="font-weight: 700">Backend:</span> Python, Django REST, SQLite, PostgreSQL, Node.js<br>
+    <span style="font-weight: 700">Other Tools Used:</span> AWS, Google Cloud<br>
+    Link coming soon
+  </WelcomeItem>
 
-    As an independent project, Vue relies on community backing for its sustainability. You can help
-    us by
-    <a href="https://vuejs.org/sponsor/" target="_blank" rel="noopener">becoming a sponsor</a>.
+  <WelcomeItem>
+    <template #icon>
+      <SupportIcon />
+    </template>
+    <template #heading>XMS (Software Development)</template>
+    Aerodynamics simulation software for propeller design and analysis including automatic propeller design and optimization, blade strength analysis, contra-rotating propeller systems, ducted propeller systems, and utilization in hovering, angled flight, ascent, descent, etc.<br>
+    <span style="font-weight: 700">Coding:</span> Python<br>
+    <span style="font-weight: 700">Methodologies Used:</span> Machine learning, data analysis, optimization, BEM, FEM<br>
+    <span style="font-weight: 700">Other Tools Used:</span> X-Foil, Subprocess, Matplotlib, NumPy<br>
+  </WelcomeItem>
+
+  <WelcomeItem>
+    <template #icon>
+      <EcosystemIcon />
+    </template>
+    <template #heading>Original Music (Not Software)</template>
+    Writing and creating original music - ongoing. Mainly guitar and singing, including some ukulele, piano, and electronic music production with Ableton LIVE<br>
+    <a href="https://soundcloud.com/mikey-s-music" target="_blank">Mostly Completed Work ⇨ SoundCloud</a><br>
+    <a href="https://www.youtube.com/playlist?list=PLvIq75Y7oDPsfqUzv-WdztMCJ67MGPtFl" target="_blank">Works In Progress ⇨ YouTube</a>
   </WelcomeItem>
 </template>
