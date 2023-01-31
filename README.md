@@ -51,3 +51,5 @@ git add dist -f && git commit -m "subtree commit"
 git subtree push --prefix dist origin gh-pages
 # go set the github pages settings to use the gh-pages branch
 # that should deploy it. check in github actions to see deployment
+
+# for 2nd time deploying and onward
