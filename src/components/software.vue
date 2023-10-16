@@ -2,6 +2,15 @@
 	import softwareCard from './softwareCard.vue'
 
 	export default {
+		data () {
+			return {
+				michaelsimeoneimage: new URL('../assets/michaelsimeone.png', import.meta.url).href,
+				movierecsimage: new URL('../assets/movierecs.png', import.meta.url).href,
+				spacegameimage: new URL('../assets/spacegame.png', import.meta.url).href,
+				eventhorizonimage: new URL('../assets/eventhorizon.png', import.meta.url).href,
+				noimage: new URL('../assets/noimageyet.png', import.meta.url).href,
+			}
+		},
 		components: {
 			softwareCard,
 		},
@@ -55,7 +64,7 @@
 		<softwareCard
 			link="https://michaelsime.one/"
 			git="https://github.com/michaels234/michaels234.github.io/"
-			image="src/assets/michaelsimeone.png"
+			:image="michaelsimeoneimage"
 			title="michaelsime.one Home Page"
 			:message="`The website you're on right now.
 CSS, HTML, Node.js, JavaScript, Vite, Vue.js`"
@@ -63,7 +72,7 @@ CSS, HTML, Node.js, JavaScript, Vite, Vue.js`"
 		<softwareCard
 			link="https://michaelsime.one/movieRecommendation/"
 			git="https://github.com/michaels234/movieRecommendation/"
-			image="src/assets/movierecs.png"
+			:image="movierecsimage"
 			title="Movie Recommendations"
 			:message="`A web app that uses machine learning to recommend movies similar to a movie input by the user.
 AWS API Gateway, AWS DynamoDB, AWS Lambda, CSS, GitHub Pages, HTML, JavaScript, NLP, Node.js, NumPy, Pandas, Python, React, scikit-learn`"
@@ -71,7 +80,7 @@ AWS API Gateway, AWS DynamoDB, AWS Lambda, CSS, GitHub Pages, HTML, JavaScript, 
 		<softwareCard
 			link="https://play.unity.com/mg/other/webgl-builds-238852/"
 			git="https://github.com/michaels234/spaceGame/"
-			image="src/assets/spacegame.png"
+			:image="spacegameimage"
 			title="Space Game"
 			:message="`An open world 3D space game.
 Blender, C#, Unity`"
@@ -79,7 +88,7 @@ Blender, C#, Unity`"
 		<softwareCard
 			link="https://eventhorizonvip.pythonanywhere.com/"
 			git="https://github.com/TecKno3/EventHorizon/"
-			image="src/assets/eventhorizon.png"
+			:image="eventhorizonimage"
 			title="Event Horizon"
 			:message="`Event hosting web & mobile app and business strategy.
 AWS, CSS, Django REST, Google Cloud, HTML, JavaScript, Node.js, PostgreSQL, Python, SQLite, Vue.js`"
@@ -87,7 +96,7 @@ AWS, CSS, Django REST, Google Cloud, HTML, JavaScript, Node.js, PostgreSQL, Pyth
 		<softwareCard
 			link=""
 			git="https://github.com/michaels234/Japanese/"
-			image="src/assets/noimageyet.png"
+			:image="noimage"
 			title="Japanese - English Study Web App"
 			:message="`An app for English speakers to study Japanese.
 CSS, FastAPI, HTML, JavaScript, Node.js, Python, SQLite, Vite, Vue.js`"
