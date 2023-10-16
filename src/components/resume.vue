@@ -4,11 +4,12 @@ export default {
 	data () {
 		return {
 			resumeimage: new URL('../assets/resume.png', import.meta.url).href,
+			resumepddf: new URL('../assets/Resume_Michael_Simeone_Site_Japan.pdf', import.meta.url).href,
 		}
 	},
 	methods: {
 		download () {
-			window.location.href='@/assets/Resume_Michael_Simeone_Site_Japan.pdf'
+			window.location.href=resumepddf
 		}
 	}
 }
@@ -16,12 +17,12 @@ export default {
 
 <template>
 	<div class="full">
-		<a href="@/assets/Resume_Michael_Simeone_Site_Japan.pdf" class="click" download>
+		<a :href="resumepddf" class="click" download>
 			<button>
 				Click to Download
 			</button>
 		</a>
-		<a href="@/assets/Resume_Michael_Simeone_Site_Japan.pdf" class="image scrolling" download>
+		<a :href="resumepddf" class="image scrolling" download>
 			<img :src="resumeimage" />
 		</a>
 	</div>
