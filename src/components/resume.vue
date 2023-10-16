@@ -1,4 +1,5 @@
 <script>
+
 export default {
 	methods: {
 		download () {
@@ -16,7 +17,7 @@ export default {
 			</button>
 		</a>
 		<a href="src/assets/Resume_Michael_Simeone_Site_Japan.pdf" class="image scrolling" download>
-			<img src="src/assets/resume.png" />
+			<img src="../assets/resume.png" />
 		</a>
 	</div>
 </template>
