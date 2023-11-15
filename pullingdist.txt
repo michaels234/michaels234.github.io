@@ -1,0 +1,3 @@
+(with gh-pages branch already checked out)
+git checkout main -- dist
+(then pull all the files out of dist and into the parent folder for branch gh-pages)
