@@ -87,7 +87,7 @@ Blender, C#, Unity`"
 		/>
 		<softwareCard
 			link="https://eventhorizonvip.pythonanywhere.com/"
-			git="https://github.com/TecKno3/EventHorizon/"
+			git="https://github.com/Konami-Code-BA/EventHorizon/"
 			:image="eventhorizonimage"
 			title="Event Horizon"
 			:message="`Event hosting web & mobile app and business strategy.
