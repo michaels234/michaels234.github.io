@@ -62,15 +62,16 @@
 <template>
 	<div class="scrolling cards" ref="cards">
 		<softwareCard
-			link="https://michaelsime.one/"
+			link="https://michaelsimeone.com/"
 			git="https://github.com/michaels234/michaels234.github.io/"
 			:image="michaelsimeoneimage"
-			title="michaelsime.one Home Page"
+			title="michaelsimeone.com
+Home Page"
 			:message="`The website you're on right now.
 CSS, HTML, Node.js, JavaScript, Vite, Vue.js`"
 		/>
 		<softwareCard
-			link="https://michaelsime.one/movieRecommendation/"
+			link="https://michaelsimeone.com/movieRecommendation/"
 			git="https://github.com/michaels234/movieRecommendation/"
 			:image="movierecsimage"
 			title="Movie Recommendations"
