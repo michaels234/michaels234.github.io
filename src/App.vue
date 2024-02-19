@@ -5,6 +5,7 @@
 		data () {
 			return {
 				linkedinimage: new URL('./assets/linkedin.png', import.meta.url).href,
+				gitimage: new URL('./assets/gitimage.png', import.meta.url).href,
 			}
 		},
 		components: {
@@ -22,9 +23,14 @@
 						<div>MICHAEL</div>
 						<div>SIMEONE</div>
 					</div>
-					<a href="https://www.linkedin.com/in/mdsimeone/" class="linkedin" target="_blank">
-						<img class="logo" :src="linkedinimage"/>
-					</a>
+					<div class="logos">
+						<a href="https://www.linkedin.com/in/mdsimeone/" class="a-logo" target="_blank">
+							<img class="logo" :src="linkedinimage"/>
+						</a>
+						<a href="https://github.com/michaels234/" class="a-logo" target="_blank">
+							<img class="logo" :src="gitimage"/>
+						</a>
+					</div>
 				</div>
 				<div class="main">
 					<mainDisplay/>
@@ -67,15 +73,24 @@
 		padding: 3vh;
 		justify-self: center;
 	}
-	.linkedin {
-		height: fit-content;
-		width: fit-content;
+	.logos {
 		position: absolute;
 		right: 20%;
+		display: flex;
+		flex-direction: column;
+	}
+	.a-logo {
+		height: fit-content;
+		width: fit-content;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 	.logo {
 		width: auto;
 		height: 2em;
+		border-radius: 20%;
+		padding: 5px;
 	}
 	.main {
 		display: flex;
