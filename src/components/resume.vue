@@ -4,7 +4,7 @@ export default {
 	data () {
 		return {
 			resumeimage: new URL('../assets/resume.png', import.meta.url).href,
-			resumepddf: new URL('../assets/Resume_Michael_Simeone_Site_Japan.pdf', import.meta.url).href,
+			resumepddf: new URL('../assets/Resume_Michael_Simeone.pdf', import.meta.url).href,
 		}
 	},
 	methods: {

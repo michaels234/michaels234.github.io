@@ -2,6 +2,11 @@
 	import mainDisplay from './components/main-display.vue'
 
 	export default {
+		data () {
+			return {
+				linkedinimage: new URL('./assets/linkedin.png', import.meta.url).href,
+			}
+		},
 		components: {
 			mainDisplay,
 		}
@@ -13,8 +18,13 @@
 		<body>
 			<div class="app">
 				<div class="title">
-					<div>MICHAEL</div>
-					<div>SIMEONE</div>
+					<div class="name">
+						<div>MICHAEL</div>
+						<div>SIMEONE</div>
+					</div>
+					<a href="https://www.linkedin.com/in/mdsimeone/" class="linkedin" target="_blank">
+						<img class="logo" :src="linkedinimage"/>
+					</a>
 				</div>
 				<div class="main">
 					<mainDisplay/>
@@ -41,12 +51,31 @@
 		align-items: center;
 	}
 	.title {
+		display: flex;
+		width: 100%;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		border: none;
+	}
+	.name {
 		text-align: center;
 		font-size: 9em;
 		font-weight: bold;
 		line-height: 0.8;
 		height: fit-content;
 		padding: 3vh;
+		justify-self: center;
+	}
+	.linkedin {
+		height: fit-content;
+		width: fit-content;
+		position: absolute;
+		right: 20%;
+	}
+	.logo {
+		width: auto;
+		height: 2em;
 	}
 	.main {
 		display: flex;
